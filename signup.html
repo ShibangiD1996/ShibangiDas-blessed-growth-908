@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/signup.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+  </head>
+  <body>
+    <nav></nav>
+    <div>
+      <div>
+        <div class="side-box">
+          <img src="https://www.kindmeal.my/images/join_normal.png" />
+          <p>
+            <a
+              href="file:///C:/Users/USER/Desktop/Masai/Unit-2B-Project/ShibangiDas-blessed-growth-908/signup.html"
+              >Food Lover Sign up</a
+            >
+          </p>
+        </div>
+        <div class="side-box">
+          <img
+            style="margin-left: 48px"
+            src="https://www.kindmeal.my/images/join_shop.png"
+          />
+          <p>
+            <a
+              style="margin-left: 48px"
+              href="file:///C:/Users/USER/Desktop/Masai/Unit-2B-Project/ShibangiDas-blessed-growth-908/signup.html"
+              >Restaurant Sign up</a
+            >
+          </p>
+        </div>
+
+        <div class="side-box">
+          <h2 style="text-align: center">Why KindMeal?</h2>
+          <ul>
+            <li>Exclusive meat-free deals</li>
+            <li>Share yummy food moments</li>
+            <li>Meet friendly food lovers</li>
+            <li>Discover cool restaurants</li>
+            <li>Email updates on tasty deals</li>
+            <li>Instant coupons & dining</li>
+            <li>No upfront payment, booking or printing</li>
+          </ul>
+          <p style="margin-top: -15px">
+            <a href="https://www.kindmeal.my/about.htm"
+              >More about KindMeal »</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="form">
+        <form>
+          <h1>
+            Food Lover? Sign Up Now or
+            <a
+              href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804791&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9050478%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITUyBZNL2AqBB-NWJsTEWBmtcoLnApayvBoqqm5U1Hrr9z5ca4G8gZoaAt7NEALw_wcB"
+              >Login With Facebook</a
+            >
+          </h1>
+          <p>
+            Discover tasty meat-free meals and dine instantly — no coupon
+            payment, booking or printing is required. KindMeal is a fun,
+            exciting and cool new way for you to show your compassion towards
+            animals. We collaborate with kind restaurants and cafes across the
+            nation to bring you delicious meat-free foods that will not only
+            help save precious animal lives, but improve your health and save
+            your money at the same time!
+          </p>
+          <label>Your Name</label>
+          <input type="text" id="firstname" />
+          <input type="text" id="lastname" /><br /><br />
+          <label>Email</label>
+          <input type="email" id="email" /><br /><br />
+          <label>Re-Enter Email:</label>
+          <input type="email" id="re_email" /><br /><br />
+          <label>Password</label>
+          <input type="password" id="password" /><br /><br />
+          <label>Username</label>
+          <input type="text" id="uname" /><br /><br />
+          <label>Birt Date</label>
+          <input type="date" id="birtdate" /><br /><br />
+          <label>Country</label>
+          <select id="country">
+            <option value="">Malaysia</option>
+            <option value="c1">India</option>
+            <option value="c2">Swizerland</option>
+            <option value="c3">USA</option>
+            <option value="c4">UK</option>
+            <option value="c5">China</option>
+            <option value="c6">Russia</option>
+            <option value="c7">Japan</option>
+            <option value="c8">Pakistan</option>
+            <option value="c9">England</option>
+            <option value="c10">Vietnam</option></select
+          ><br /><br />
+          <label>State</label>
+          <select id="state">
+            <option value="">Select State</option>
+            <option value="s1">Odisha</option>
+            <option value="s2">Kerla</option>
+            <option value="s3">Andhrapradesh</option>
+            <option value="s4">UP</option>
+            <option value="s5">Bihar</option>
+            <option value="s6">Chhatishgarh</option>
+            <option value="s7">Karnatak</option>
+            <option value="s8">Tamilnadu</option>
+            <option value="s9">Uttarakhand</option>
+            <option value="s10">Westbengol</option></select
+          ><br /><br />
+          <label>Gender </label>
+
+          <input type="radio" id="male" name="s_g" />
+          <label>Male</label>
+          <input type="radio" id="female" name="s_g" />
+          <label>Female</label>
+
+          <br /><br />
+          <label>Profile Photo</label>
+          <input type="file" id="photo" value="Select photo" /><br /><br />
+          <input type="checkbox" id="checkbox" />
+          <label>I agree to KindMeal.my's Terms & Conditions</label><br /><br />
+          <input type="submit" id="submit" value="Join Now" />
+        </form>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
+<script>
+  let signup_form = document.querySelector("form");
+
+  let signupLS = JSON.parse(localStorage.getItem("signup_data")) || [];
+
+  signup_form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let obj = {
+      u_fnm: signup_form.firstname.value,
+      u_lnm: signup_form.lastname.value,
+      u_mail: signup_form.email.value,
+      u_rmail: signup_form.re_email.value,
+      u_pwd: signup_form.password.value,
+      u_nm: signup_form.uname.value,
+      u_dob: signup_form.birtdate.value,
+      u_country: signup_form.country.value,
+      u_state: signup_form.state.value,
+      u_male: signup_form.male.value,
+      u_female: signup_form.female.value,
+      u_photo: signup_form.photo.value,
+      u_checkbox: signup_form.checkbox.value,
+    };
+
+    if (obj.u_fnm === "") {
+      alert("Please enter a valid value for First Name");
+      return;
+    } else if (obj.u_lnm === "") {
+      alert("Please enter a valid value for Last Name");
+      return;
+    } else if (obj.u_mail === "") {
+      alert("Please enter a valid value for Email");
+      return;
+    } else if (obj.u_rmail === "") {
+      alert("Please enter a valid value for Re-Enter Email");
+      return;
+    } else if (obj.u_mail.length !== obj.u_rmail.length) {
+      alert("Your Email and Re-Entered Email do not match");
+      return;
+    } else if (obj.u_pwd === "") {
+      alert("Please enter a valid value for Password");
+      return;
+    } else if (obj.u_pwd.length < 5) {
+      alert("Your Password should be 5 characters or more");
+      return;
+    } else if (obj.u_nm === "") {
+      alert("Please enter a valid Username");
+      return;
+    } else if (obj.u_dob === "" || obj.u_dob === null) {
+      alert("Please enter a valid value for Birtday");
+      return;
+    } else if (obj.u_state === "" || obj.u_state === null) {
+      alert("Please enter a valid value for State");
+      return;
+    }
+    signupLS.forEach(function (ele) {
+      if (ele.email === obj.email) {
+        alert("User already exists");
+      }
+    });
+
+    signupLS.push(obj);
+    localStorage.setItem("signup_data", JSON.stringify(signupLS));
+  });
+</script>
+<script src="./Scripts/navbar.js"></script>
+<script src="./Scripts/footer.js"></script>

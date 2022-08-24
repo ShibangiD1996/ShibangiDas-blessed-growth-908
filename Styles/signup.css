@@ -1,0 +1,44 @@
+
+body>div{ 
+    display: flex;
+    justify-content: center;
+    margin-left:50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    gap:30px;
+}
+
+.side-box{
+    border: 0.5px solid black;
+    background-color:rgb(247, 243, 242 );
+    border-radius: 25px;
+    height: 250px;
+    width:240px;
+    margin-top: 20px;
+}
+
+.side-box>img{
+    height:50%;
+    margin-left: 32px;
+    margin-top: 30px;
+}
+
+.side-box>p>a{
+    margin-left:32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

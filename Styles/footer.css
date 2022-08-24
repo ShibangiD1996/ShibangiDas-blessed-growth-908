@@ -1,0 +1,43 @@
+
+.footer{
+   background-color:  rgb(100, 184, 100);
+
+}
+
+.ftr{
+   
+    display:flex;
+    justify-content: center;
+   gap:20px;
+   color: white;
+
+}
+.ftr>div{
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+h6{
+    color:white;
+   text-align: center; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
