@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.nav1{
+    display: flex;
+    height: 120px;
+    width: 100%;
+}
+
+#links{
+    display: flex;
+}
+#kindmeal_logo{
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+#navigate{
+   display: flex;
+   margin-top: 10px;
+   margin-left: 200px;
+}
+
+.media_link{
+    height: 35%;
+    margin-left: 20px;
+    margin-top: 30px;
+    
+}
+.top_right_menu{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 30px;
+  margin-left: 150px;
+ 
+}
+.decorate1{
+   
+    text-decoration: none;
+    color: white;
+
+}
+#fb{
+   background-color: rgb(26, 26, 191);
+   border: none;
+   border-radius: 10%;
+    height:30px;
+    width: 100px;
+}
+.decorate2{
+    text-decoration: none;
+    color:white;
+}
+
+#mail{
+    background-color: grey;
+    border: none;
+    border-radius: 10%;
+     height:30px;
+     width: 100px;
+
+}
+
+
+
+
+.nav2{
+    width:100%;
+    height: 45px;
+    background-color:rgb(100, 184, 100);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+}
+.nav2>a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
