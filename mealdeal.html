@@ -1,17 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MealDeal</title>
     <link rel="stylesheet" href="./Styles/navbar.css" />
     <link rel="stylesheet" href="./Styles/footer.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="./Styles/product.css" />
+  </head>
+  <body>
     <nav></nav>
+    <div class="u_container">
+      <div id="h_container">
+        <div class="n_container">
+          <h1 style="margin-top: 30px">
+            Meat-Free Deals | Restaurants In Malaysia
+          </h1>
+
+          <p style="margin-top: 25px">
+            Browse delicious meat-free, vegetarian deals from top restaurants
+            and cafes! Just click on "Get Free Coupon" to obtain instant
+            discounts and dine at the restaurants. No upfront payment, booking
+            or printing is needed. If you share it on social media, you'll even
+            DOUBLE your discount!
+          </p>
+
+          <p style="margin-top: 25px">
+            Download our mobile app now to easily get coupons and start dining
+            in a few seconds. Effortlessly save lives, health, environment and
+            money now!
+          </p>
+
+          <div style="margin-top:25px">
+            <input
+              type="text"
+              id="search"
+              placeholder="Search Shop or Deal Name"
+            />
+            <select id="catagory">
+              <option value="">All Catagories</option>
+              <option value="Pasta">Pasta</option>
+              <option value="Burger">Burger</option>
+              <option value="Breakfast">Breakfast</option>
+              <option value="Salad">Salad</option>
+              <option value="Bakery">Bakery</option>
+            </select>
+            <select id="Location">
+              <option value="">All Locations</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Kolkatta">Kolkatta</option>
+              <option value="Bhubaneswar">Bhubaneswar</option>
+              <option value="Ranchi">Ranchi</option>
+            </select>
+            <button id="search_deal">Search Deals</button>
+            <button id="browse">Browse Restaurants</button>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://www.kindmeal.my/images/ads/banner_janegoodall_message.jpg"
+      />
+      <!-- Pagination -->
+    </div>
+    <div id="container_m"></div>
     <footer></footer>
-</body>
+  </body>
 </html>
 <script src="./Scripts/navbar.js"></script>
+
+<!-- <script>
+  let Product_dataArr = [
+    {
+      discount: "-10%",
+      name: "YishensuGroceries",
+      image_url:
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-bulbfish-1143754.jpg",
+      dish: "Yishensu Groceries @ Ipoh",
+      dish_url: "https://www.kindmeal.my/YishensuGroceries/deal-720.htm",
+      location: "Yishensu Groceries Ipoh— Ipoh, Perak",
+      location_url: "https://www.kindmeal.my/YishensuGroceries",
+      about:
+        "Yishensu Groceries, Ipoh offers you a wide range of healthy, nutritious and tasty vegetarian products! We develop our own exclus",
+      free_coupon: "Get FREE Coupon",
+      free_coupon_url: "https://www.kindmeal.my/YishensuGroceries/deal-720.htm",
+      ratings: "https://www.kindmeal.my/images/icon_star_grey.png",
+      eggfree: "https://www.kindmeal.my/images/icon_egg.png",
+      dairyfree: "https://www.kindmeal.my/images/icon_milk_disabled.png",
+      beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+      kind_meal: "KindMeal Discount",
+      kindmeal_discount: "10% Off",
+      expires_in: "Expires In",
+      expires: "5 Days",
+    },
+    {
+      discount: "-10%",
+      name: "Vegelab",
+      image_url:
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-engin-akyurt-2347311.jpg",
+      dish: "Fusion Western Delicacies",
+      dish_url: "https://www.kindmeal.my/Vegelab/deal-649.htm",
+      location: "Vegelab— Cheras, Kuala Lumpur",
+      location_url: "https://www.kindmeal.my/Vegelab",
+      about:
+        "Experience our delectable selection of fusion Western cuisine, crafted with heart to promote a healthy and compassionate eating li..",
+      free_coupon: "Get FREE Coupon",
+      free_coupon_url: "https://www.kindmeal.my/Vegelab/deal-649.htm",
+      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      eggfree: "https://www.kindmeal.my/images/icon_egg.png",
+      dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
+      beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+      Kind_meal: "KindMeal Discount",
+      Kindmeal_discount: "10% Off",
+      expires_in: "Expires In",
+      expires: "6 Days",
+    },
+    {
+      discount: "-10%",
+      name: "Hijau",
+      image_url:
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-jill-wellington-257816.jpg",
+      dish: "Malaysian Vegan Experience",
+      dish_url: "https://www.kindmeal.my/Hijau/deal-712.htm",
+      location: "Hijau",
+      location_url: "https://www.kindmeal.my/Hijau",
+      about:
+        "Indulge in Malay-Indo fusion cuisine, a plant-based comfort food and healthy pleasure! Hijau is your go-to, where you can embrac..",
+      free_coupon: "Get FREE Coupon",
+      free_coupon_url: "https://www.kindmeal.my/Hijau/deal-712.htm",
+      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      eggfree: "https://www.kindmeal.my/images/icon_egg_disabled.png",
+      dairyfree: "https://www.kindmeal.my/images/icon_milk_disabled.png",
+      beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+      Kind_meal: "KindMeal Discount",
+      Kindmeal_discount: "10% Off",
+      expires_in: "Expires In",
+      expires: "8 Days",
+    },
+    {
+      discount: "-20%",
+      name: "JamaicaBlue",
+      image_url:
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-lumn-568370.jpg",
+      dish: "Fine Coffees & Fabulous Food",
+      dish_url: "https://www.kindmeal.my/JamaicaBlue/deal-551.htm",
+      location: "Jamaica Blue— Shah Alam & 1 Branch",
+      location_url: "https://www.kindmeal.my/JamaicaBlue",
+      about:
+        "Serving classic dishes with a contemporary twist, using the freshest and seasonal ingredients. Select from any of our meat-free i..",
+      free_coupon: "Get FREE Coupon",
+      free_coupon_url: "https://www.kindmeal.my/JamaicaBlue/deal-551.htm",
+      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      eggfree: "https://www.kindmeal.my/images/icon_egg.png",
+      dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
+      beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+      Kind_meal: "KindMeal Discount",
+      Kindmeal_discount: "20% Off",
+      expires_in: "Expires In",
+      expires: "12 Days",
+    },
+    {
+      discount: "-20%",
+      name: "DiningBowl",
+      image_url:
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-mustafa-t%C3%BCrkeri-707251.jpg",
+      dish: "Dining Bowl Asian Delicacies",
+      dish_url: "https://www.kindmeal.my/DiningBowl/deal-383.htm",
+      location: "Dining Bowl— Kuala Lumpur, Wilayah Persekutuan",
+      location_url: "https://www.kindmeal.my/DiningBowl",
+      about:
+        "Dine in this authentic cozy Chinese environment with any items from the menu, made with fresh and quality ingredients, in an envir..",
+      free_coupon: "Get FREE Coupon",
+      free_coupon_url: "https://www.kindmeal.my/DiningBowl/deal-383.htm",
+      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      eggfree: "https://www.kindmeal.my/images/icon_egg.png",
+      dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
+      beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+      Kind_meal: "KindMeal Discount",
+      kindmeal_discount: "20% Off",
+      expires_in: "Expires In",
+      expires: "10 Days",
+    },
+    {
+      discount: "-20%",
+      name: "Cameleon",
+      image_url:
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-tranmautritam-61180.jpg",
+      dish: "Authentic Asian Experience",
+      dish_url: "https://www.kindmeal.my/Cameleon/deal-610.htm",
+      location:
+        "Cameleon Vegetarian Restaurant — Kuala Lumpur, Wilayah Persekutuan",
+      about:
+        "Indulge yourself in healthy, authentic Asian cuisines within a traditional dinning environment. Enjoy any items from our ala cart..",
+      free_caupon: "Get FREE Coupon",
+      free_coupon_url: "https://www.kindmeal.my/Cameleon/deal-610.htm",
+      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      eggfree: "https://www.kindmeal.my/images/icon_egg_disabled.png",
+      dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
+      beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+      Kind_meal: "KindMeal Discount",
+      kindmeal_discount: "20% Off",
+      expires_in: "Expires In",
+      expires: "13 Days",
+    },
+    {
+      discount: "-20%",
+      name: "BlackCatCafe",
+      image_url:
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-cats-coming-406152.jpg",
+      dish: "Flavours Around the World",
+      dish_url: "https://www.kindmeal.my/BlackCatCafe/deal-457.htm",
+      location: "The Black Cat Cafe — Kuala Lumpur, Wilayah Persekutuan",
+      about:
+        "Western and Asian cuisine, all prepared in our humble kitchen with utmost passion and love. On Weekdays, select ANY items from ..",
+      free_caupon: "Get FREE Coupon",
+      free_coupon_url: "https://www.kindmeal.my/BlackCatCafe/deal-457.htm",
+      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      eggfree: "https://www.kindmeal.my/images/icon_egg.png",
+      dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
+      beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+      Kind_meal: "KindMeal Discount",
+      kindmeal_discount: "20% Off",
+      expires_in: "Expires In",
+      expires: "12 Days",
+    },
+    {
+      discount: "-20%",
+      name: "SsihatKafe",
+      image_url:
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-grooveland-designs-3607284.jpg",
+
+      dish: "Melakan Indian Fusion Cuisine",
+      dish_url: "https://www.kindmeal.my/SsihatKafe/deal-626.htm",
+      location: "Ssihat Kafe — Melaka",
+      about:
+        "Ignite your taste buds with indian spices and flavours at Melaka's only Indian fully Vegetarian Cafe. We humbly welcome you and y..",
+      free_caupon: "Get FREE Coupon",
+      free_coupon_url: "https://www.kindmeal.my/SsihatKafe/deal-626.htm",
+      ratings: "https://www.kindmeal.my/images/icon_star_grey.png",
+      eggfree: "https://www.kindmeal.my/images/icon_egg_disabled.png",
+      dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
+      beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+      Kind_meal: "KindMeal Discount",
+      kindmeal_discount: "20% Off",
+      expires_in: "Expires In",
+      expires: "5 Days",
+    },
+    {
+      discount: "-20%",
+      name: "JuveWellness",
+      image_url:
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-lisa-fotios-1279330.jpg",
+      dish: "Wellness Meal + 10% Off Organic Products",
+      dish_url: "https://www.kindmeal.my/JuveWellness/deal-403.htm",
+      location: "Juve Wellness Puchong — Puchong, Selangor",
+      about:
+        "Select from Ala Carte meal items from the menu, served with a cup of Wellness Tea! Featured food menu items include: Juve Four Se..\nGet FREE Coupon\n(4)",
+      free_caupon: "Get FREE Coupon",
+      free_coupon_url: "https://www.kindmeal.my/JuveWellness/deal-403.htm",
+      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      eggfree: "https://www.kindmeal.my/images/icon_egg_disabled.png",
+      dairyfree: "https://www.kindmeal.my/images/icon_milk_disabled.png",
+      beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+      Kind_meal: "KindMeal Discount",
+      kindmeal_discount: "20% Off",
+      expires_in: "Expires In",
+      expires: "5 Days",
+    },
+    {
+      discount: "-20%",
+      name: "Croutons",
+      image_url:
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-lisa-fotios-1351238.jpg",
+      dish: "Scrumptious Croutons",
+      dish_url: "https://www.kindmeal.my/Croutons/deal-529.htm",
+      location: "Croutons Cafe — Seri Kembangan, Selangor",
+      about:
+        "Croutons brings you a sumptuous variety of international cuisines. Indulge in any of the meat-free items from our menu below: • ..",
+      free_caupon: "Get FREE Coupon",
+      free_coupon_url: "https://www.kindmeal.my/Croutons/deal-529.htm",
+      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      eggfree: "https://www.kindmeal.my/images/icon_egg.png",
+      dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
+      beerfree: "https://www.kindmeal.my/images/icon_alcohol.png",
+      Kind_meal: "KindMeal Discount",
+      kindmeal_discount: "20% Off",
+      expires_in: "Expires In",
+      expires: "13 Days",
+    },
+  ];
+</script>
+
+<script>
+  let contain_m = document.getElementById("container_m");
+
+  //  let p_data = JSON.parse(localStorage.getItem("product_data")) || [];
+
+  function Display(data) {
+    data.forEach(function (ele) {
+      let product = document.createElement("div");
+
+      let discnt = document.createElement("h3");
+      discnt.innerText = ele.discount;
+
+      let image = document.createElement("img");
+      image.src = ele.image_url;
+
+      let dish = document.createElement("h2");
+      dish.innerText = ele.dish;
+
+      let location = document.createElement("h3");
+      location.innerText = ele.location;
+
+      let about = document.createElement("p");
+      about.innerText = ele.about;
+
+      let btn = document.createElement("button");
+      let free_caupon = document.createElement("h2");
+      free_caupon.innerText = ele.free_caupon;
+      btn.innerText = free_caupon;
+
+      let rating = document.createElement("img");
+      rating.src = ele.ratings;
+
+      let eggfree = document.createElement("img");
+      eggfree.src= ele.eggfree;
+
+      let dairyfree = document.createElement("img");
+      dairyfree.src = ele.dairyfree;
+
+      let beerfree = document.createElement("img");
+      beerfree.src= ele.beerfree;
+
+      let expires_in = document.createElement("h4");
+      expires_in.innerText = ele.expires_in;
+
+      let expires = document.createElement("h4");
+      expires.innerText = ele.expires;
+
+      product.append(
+        discnt,
+        image,
+        dish,
+        location,
+        about,
+        btn,
+        rating,
+        eggfree,
+        dairyfree,
+        beerfree,
+        expires_in,
+        expires
+      );
+      contain_m.append(product);
+    });
+  }
+
+  Display(Product_dataArr);
+</script> -->
 <script src="./Scripts/footer.js"></script>
