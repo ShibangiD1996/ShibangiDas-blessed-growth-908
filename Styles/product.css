@@ -1,6 +1,6 @@
 
 .n_container{
-    border:1px solid red;
+   
     height:280px;
     width:70%;
     margin: auto;
@@ -11,42 +11,174 @@
     background-color: rgb(248, 243, 243);
 }
 
+#b_banner{
+ 
+    height:50px;
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap:20px
+}
+
 #search{
     height:40px;
     width:190px;
-    text-align: center
+    text-align: center;
+    border-radius:5px;
+    border:none
 }
 
 #catagory{
     height:40px;
     width:150px;
-
+    text-align: center;
+    border-radius: 5px;
+    border:none;
 }
 
 #Location{
     height:40px;
     width:130px;
+    text-align: center;
+    border-radius: 5px;
+    border:none;
+}
+
+
+#search_deal{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height:40px;
+    width:170px;
+    font-size: 16px;
+    color: white;
+}
+
+#browse{
+    background-color: rgb(80, 190, 80);
+    border: none;
+    border-radius: 5px;
+    height:40px;
+    width:180px;
+    font-size:16px;
+    color: white;
+}
+
+#b_img{
+  
+    height: 300px;
+    width: 72.4%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#container_m{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 140px;
+}
+ .p_container{
+  
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 15px;
+    height:600px;
+    width: 76.2%;   
+    margin-top: 35px; 
+    padding-bottom: 22px;
+   
+} 
+.discount{
+    border: 1px solid rgb(235, 222, 222);
+    background-color: rgb(235, 222, 222);
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    margin-left: 20px;
+    margin-top: 20px;
+   position: absolute;
+   font-size: 25px;
+   padding-top: 15px;
+   padding-left: 5px;
 }
 
 
 
 
+.dishImg{
+    height:350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.dishNm{
+    margin-top: -35px;
+    margin-left: 100px;
+    color: white;
+}
 
 
 
 
+.loctn{
+    margin-left: 15px;
+    margin-top: 15px;
+    color: grey;
+}
+
+.abt{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.button{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width:200px;
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.rating{
+   
+    height:30px;
+    width: 170px;
+    margin-left: 70px;
+    margin-top: 25px;
+}
+.mark{
+    margin-left: 480px;
+    margin-top: -35px;
+}
 
 
 
 
+.m_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
 
+.egg,.dairy,.beer{
+        height:35px;
+        margin-left: 3px;
+  
+}
 
-
-
-
-
-
-
+.kindMealDis{
+    color: red;
+}
+.exp{
+    color: grey;
+}
 
 
 

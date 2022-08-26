@@ -32,45 +32,71 @@
             money now!
           </p>
 
-          <div style="margin-top:25px">
-            <input
-              type="text"
-              id="search"
-              placeholder="Search Shop or Deal Name"
-            />
-            <select id="catagory">
-              <option value="">All Catagories</option>
-              <option value="Pasta">Pasta</option>
-              <option value="Burger">Burger</option>
-              <option value="Breakfast">Breakfast</option>
-              <option value="Salad">Salad</option>
-              <option value="Bakery">Bakery</option>
-            </select>
-            <select id="Location">
-              <option value="">All Locations</option>
-              <option value="Delhi">Delhi</option>
-              <option value="Mumbai">Mumbai</option>
-              <option value="Kolkatta">Kolkatta</option>
-              <option value="Bhubaneswar">Bhubaneswar</option>
-              <option value="Ranchi">Ranchi</option>
-            </select>
-            <button id="search_deal">Search Deals</button>
-            <button id="browse">Browse Restaurants</button>
+          <div id="b_banner" style="margin-top: 25px">
+            <div>
+              <input
+                type="text"
+                id="search"
+                placeholder="Search Shop or Deal Name"
+              />
+            </div>
+            <div>
+              <select id="catagory">
+                <option value="">All Catagories</option>
+                <option value="Yishensu Groceries @ Ipoh">Pasta</option>
+                <option value="Hijau">Burger</option>
+                <option value="Fine Coffees & Fabulous Food">Breakfast</option>
+                <option value="Scrumptious Croutons">Salad</option>
+                <option value="Wellness Meal + 10% Off Organic Products">
+                  Bakery
+                </option>
+              </select>
+            </div>
+            <div>
+              <select id="Location">
+                <option value="">All Locations</option>
+                <option value="Yishensu Groceries Ipoh— Ipoh, Perak">
+                  Delhi
+                </option>
+                <option value="Vegelab— Cheras, Kuala Lumpur">Mumbai</option>
+                <option value="Malaysian Vegan Experience">Kolkatta</option>
+                <option value="Jamaica Blue— Shah Alam & 1 Branch">
+                  Bhubaneswar
+                </option>
+                <option value="Dining Bowl— Kuala Lumpur, Wilayah Persekutuan">
+                  Ranchi
+                </option>
+              </select>
+            </div>
+            <div>
+              <button id="search_deal">Search Deals</button>
+            </div>
+            <div>
+              <button id="browse">Browse Restaurants</button>
+            </div>
           </div>
         </div>
       </div>
-      <img
-        src="https://www.kindmeal.my/images/ads/banner_janegoodall_message.jpg"
-      />
+      <div id="b_img">
+        <img
+          src="https://www.kindmeal.my/images/ads/banner_janegoodall_message.jpg"
+        />
+      </div>
+
       <!-- Pagination -->
     </div>
     <div id="container_m"></div>
+    <div style="background-color: rgb(248, 243, 243); margin-top: 100px">
+      <div style="margin-left: 250px">
+        <img src="https://www.kindmeal.my/images/how_kindmeal_works.png" />
+      </div>
+    </div>
     <footer></footer>
   </body>
 </html>
 <script src="./Scripts/navbar.js"></script>
 
-<!-- <script>
+<script>
   let Product_dataArr = [
     {
       discount: "-10%",
@@ -85,11 +111,13 @@
         "Yishensu Groceries, Ipoh offers you a wide range of healthy, nutritious and tasty vegetarian products! We develop our own exclus",
       free_coupon: "Get FREE Coupon",
       free_coupon_url: "https://www.kindmeal.my/YishensuGroceries/deal-720.htm",
-      ratings: "https://www.kindmeal.my/images/icon_star_grey.png",
+      ratings:
+        "file:///C:/Users/USER/Desktop/Masai/Images/5starblankrating.jpg",
+      mark: "(0)",
       eggfree: "https://www.kindmeal.my/images/icon_egg.png",
       dairyfree: "https://www.kindmeal.my/images/icon_milk_disabled.png",
       beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
-      kind_meal: "KindMeal Discount",
+      Kind_meal: "KindMeal Discount",
       kindmeal_discount: "10% Off",
       expires_in: "Expires In",
       expires: "5 Days",
@@ -107,12 +135,13 @@
         "Experience our delectable selection of fusion Western cuisine, crafted with heart to promote a healthy and compassionate eating li..",
       free_coupon: "Get FREE Coupon",
       free_coupon_url: "https://www.kindmeal.my/Vegelab/deal-649.htm",
-      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      ratings: "file:///C:/Users/USER/Desktop/Masai/Images/4_star_full.png",
+      mark: "(16)",
       eggfree: "https://www.kindmeal.my/images/icon_egg.png",
       dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
       beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
       Kind_meal: "KindMeal Discount",
-      Kindmeal_discount: "10% Off",
+      kindmeal_discount: "10% Off",
       expires_in: "Expires In",
       expires: "6 Days",
     },
@@ -129,12 +158,14 @@
         "Indulge in Malay-Indo fusion cuisine, a plant-based comfort food and healthy pleasure! Hijau is your go-to, where you can embrac..",
       free_coupon: "Get FREE Coupon",
       free_coupon_url: "https://www.kindmeal.my/Hijau/deal-712.htm",
-      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      ratings:
+        "file:///C:/Users/USER/Desktop/Masai/Images/5_star_full_rating.png",
+      mark: "(11)",
       eggfree: "https://www.kindmeal.my/images/icon_egg_disabled.png",
       dairyfree: "https://www.kindmeal.my/images/icon_milk_disabled.png",
       beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
       Kind_meal: "KindMeal Discount",
-      Kindmeal_discount: "10% Off",
+      kindmeal_discount: "10% Off",
       expires_in: "Expires In",
       expires: "8 Days",
     },
@@ -151,12 +182,14 @@
         "Serving classic dishes with a contemporary twist, using the freshest and seasonal ingredients. Select from any of our meat-free i..",
       free_coupon: "Get FREE Coupon",
       free_coupon_url: "https://www.kindmeal.my/JamaicaBlue/deal-551.htm",
-      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      ratings:
+        "file:///C:/Users/USER/Desktop/Masai/Images/5starblankrating.jpg",
+      mark: "(0)",
       eggfree: "https://www.kindmeal.my/images/icon_egg.png",
       dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
       beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
       Kind_meal: "KindMeal Discount",
-      Kindmeal_discount: "20% Off",
+      kindmeal_discount: "20% Off",
       expires_in: "Expires In",
       expires: "12 Days",
     },
@@ -173,7 +206,8 @@
         "Dine in this authentic cozy Chinese environment with any items from the menu, made with fresh and quality ingredients, in an envir..",
       free_coupon: "Get FREE Coupon",
       free_coupon_url: "https://www.kindmeal.my/DiningBowl/deal-383.htm",
-      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      ratings: "file:///C:/Users/USER/Desktop/Masai/Images/4staroneblank.png",
+      mark: "(12)",
       eggfree: "https://www.kindmeal.my/images/icon_egg.png",
       dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
       beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
@@ -195,7 +229,9 @@
         "Indulge yourself in healthy, authentic Asian cuisines within a traditional dinning environment. Enjoy any items from our ala cart..",
       free_caupon: "Get FREE Coupon",
       free_coupon_url: "https://www.kindmeal.my/Cameleon/deal-610.htm",
-      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      ratings:
+        "file:///C:/Users/USER/Desktop/Masai/Images/5starblankrating.jpg",
+      mark: "(0)",
       eggfree: "https://www.kindmeal.my/images/icon_egg_disabled.png",
       dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
       beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
@@ -216,7 +252,8 @@
         "Western and Asian cuisine, all prepared in our humble kitchen with utmost passion and love. On Weekdays, select ANY items from ..",
       free_caupon: "Get FREE Coupon",
       free_coupon_url: "https://www.kindmeal.my/BlackCatCafe/deal-457.htm",
-      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      ratings: "file:///C:/Users/USER/Desktop/Masai/Images/4_star_full.png",
+      mark: "(5)",
       eggfree: "https://www.kindmeal.my/images/icon_egg.png",
       dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
       beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
@@ -229,8 +266,7 @@
       discount: "-20%",
       name: "SsihatKafe",
       image_url:
-        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-grooveland-designs-3607284.jpg",
-
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-trang-doan-1099680.jpg",
       dish: "Melakan Indian Fusion Cuisine",
       dish_url: "https://www.kindmeal.my/SsihatKafe/deal-626.htm",
       location: "Ssihat Kafe — Melaka",
@@ -238,7 +274,9 @@
         "Ignite your taste buds with indian spices and flavours at Melaka's only Indian fully Vegetarian Cafe. We humbly welcome you and y..",
       free_caupon: "Get FREE Coupon",
       free_coupon_url: "https://www.kindmeal.my/SsihatKafe/deal-626.htm",
-      ratings: "https://www.kindmeal.my/images/icon_star_grey.png",
+      ratings:
+        "file:///C:/Users/USER/Desktop/Masai/Images/5_star_full_rating.png",
+      mark: "(4)",
       eggfree: "https://www.kindmeal.my/images/icon_egg_disabled.png",
       dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
       beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
@@ -256,10 +294,12 @@
       dish_url: "https://www.kindmeal.my/JuveWellness/deal-403.htm",
       location: "Juve Wellness Puchong — Puchong, Selangor",
       about:
-        "Select from Ala Carte meal items from the menu, served with a cup of Wellness Tea! Featured food menu items include: Juve Four Se..\nGet FREE Coupon\n(4)",
+        "Select from Ala Carte meal items from the menu, served with a cup of Wellness Tea! Featured food menu items include: Juve Four Se..",
       free_caupon: "Get FREE Coupon",
       free_coupon_url: "https://www.kindmeal.my/JuveWellness/deal-403.htm",
-      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      ratings:
+        "file:///C:/Users/USER/Desktop/Masai/Images/5_star_full_rating.png",
+      mark: "(1)",
       eggfree: "https://www.kindmeal.my/images/icon_egg_disabled.png",
       dairyfree: "https://www.kindmeal.my/images/icon_milk_disabled.png",
       beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
@@ -280,7 +320,8 @@
         "Croutons brings you a sumptuous variety of international cuisines. Indulge in any of the meat-free items from our menu below: • ..",
       free_caupon: "Get FREE Coupon",
       free_coupon_url: "https://www.kindmeal.my/Croutons/deal-529.htm",
-      ratings: "https://www.kindmeal.my/images/icon_star.png",
+      ratings: "file:///C:/Users/USER/Desktop/Masai/Images/4staroneblank.png",
+      mark: "(1)",
       eggfree: "https://www.kindmeal.my/images/icon_egg.png",
       dairyfree: "https://www.kindmeal.my/images/icon_milk.png",
       beerfree: "https://www.kindmeal.my/images/icon_alcohol.png",
@@ -294,50 +335,93 @@
 
 <script>
   let contain_m = document.getElementById("container_m");
-
-  //  let p_data = JSON.parse(localStorage.getItem("product_data")) || [];
+  let p_search = document.getElementById("search");
+  let p_filter1 = document.getElementById("catagory");
+  let p_flter2 = document.getElementById("Location");
 
   function Display(data) {
+    contain_m.innerHTML = null;
     data.forEach(function (ele) {
       let product = document.createElement("div");
+      product.className = "p_container";
 
       let discnt = document.createElement("h3");
       discnt.innerText = ele.discount;
+      discnt.className = "discount";
 
       let image = document.createElement("img");
       image.src = ele.image_url;
+      image.className = "dishImg";
 
       let dish = document.createElement("h2");
       dish.innerText = ele.dish;
+      dish.className = "dishNm";
 
       let location = document.createElement("h3");
       location.innerText = ele.location;
+      location.className = "loctn";
 
       let about = document.createElement("p");
       about.innerText = ele.about;
+      about.className = "abt";
 
       let btn = document.createElement("button");
-      let free_caupon = document.createElement("h2");
-      free_caupon.innerText = ele.free_caupon;
-      btn.innerText = free_caupon;
+      btn.innerText = "Get Free Coupon";
+      btn.className = "button";
 
-      let rating = document.createElement("img");
-      rating.src = ele.ratings;
+      let ratings = document.createElement("img");
+      ratings.src = ele.ratings;
+      ratings.className = "rating";
+
+      let mark = document.createElement("p");
+      mark.innerHTML = ele.mark;
+      mark.className = "mark";
+
+      let m_div = document.createElement("div");
+      m_div.className = "m_div";
+
+      let n_div = document.createElement("div");
+      n_div.className = "bottom_div";
 
       let eggfree = document.createElement("img");
-      eggfree.src= ele.eggfree;
+      eggfree.src = ele.eggfree;
+      eggfree.className = "egg";
 
       let dairyfree = document.createElement("img");
       dairyfree.src = ele.dairyfree;
+      dairyfree.className = "dairy";
 
       let beerfree = document.createElement("img");
-      beerfree.src= ele.beerfree;
+      beerfree.src = ele.beerfree;
+      beerfree.className = "beer";
+
+      let n1_div = document.createElement("div");
+      n1_div.className = "n1Div";
+
+      let kindmeal = document.createElement("h4");
+      kindmeal.innerHTML = ele.Kind_meal;
+      kindmeal.className = "kindMeal";
+
+      let kindmealdis = document.createElement("h2");
+      kindmealdis.innerHTML = ele.kindmeal_discount;
+      kindmealdis.className = "kindMealDis";
+
+      let n2_div = document.createElement("div");
+      n2_div.className = "n2_div";
 
       let expires_in = document.createElement("h4");
       expires_in.innerText = ele.expires_in;
+      expires_in.className = "expi";
 
-      let expires = document.createElement("h4");
+      let expires = document.createElement("h2");
       expires.innerText = ele.expires;
+      expires.className = "exp";
+
+      n_div.append(eggfree, dairyfree, beerfree);
+      n1_div.append(kindmeal, kindmealdis);
+      n2_div.append(expires_in, expires);
+
+      m_div.append(n_div, n1_div, n2_div);
 
       product.append(
         discnt,
@@ -346,17 +430,49 @@
         location,
         about,
         btn,
-        rating,
-        eggfree,
-        dairyfree,
-        beerfree,
-        expires_in,
-        expires
+        ratings,
+        mark,
+        m_div
       );
       contain_m.append(product);
     });
   }
 
   Display(Product_dataArr);
-</script> -->
+
+  p_search.addEventListener("input", function () {
+    if (p_search.value === "" || p_search.value === null) {
+      Display(Product_dataArr);
+    } else {
+      let filteredProd = Product_dataArr.filter(function (el) {
+        return el.dish
+          .toLocaleLowerCase()
+          .includes(p_search.value.toLocaleLowerCase());
+      });
+      Display(filteredProd);
+    }
+  });
+
+  p_filter1.addEventListener("change", function () {
+    if (p_filter1.value === "") {
+      Display(Product_dataArr);
+    } else {
+      let filtered_P = Product_dataArr.filter(function (el) {
+        return el.dish === p_filter1.value;
+      });
+      Display(filtered_P);
+    }
+  });
+
+  p_flter2.addEventListener("change", function (el) {
+    if (p_flter2.value === "") {
+      Display(Product_dataArr);
+    } else {
+      let filter_P = Product_dataArr.filter(function (el) {
+        return el.location === p_flter2.value;
+      });
+      Display(filter_P);
+    }
+  });
+</script>
 <script src="./Scripts/footer.js"></script>

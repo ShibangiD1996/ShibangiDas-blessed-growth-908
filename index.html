@@ -4,14 +4,134 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/navbar.css"/>
     <link rel="stylesheet" href="./Styles/body.css" />
+    <link rel="stylesheet" href="./Styles/popup.css" />
     <link rel="stylesheet" href="./Styles/footer.css" />
     <title>Home Page</title>
   </head>
   <body>
-    <nav></nav>
+    <div>
+      <div class="nav1">
+        <div id="links">
+          <div id="kindmeal_logo">
+            <img src="https://www.kindmeal.my/images/logo-kindmeal.png" />
+          </div>
+          <div id="navigate">
+            <div>
+              <img
+                class="media_link"
+                src="https://www.kindmeal.my/images/follow_blog_grey.png"
+              />
+            </div>
+            <div>
+              <img
+                class="media_link"
+                src="https://www.kindmeal.my/images/follow_facebook_grey.png"
+              />
+            </div>
+            <div>
+              <img
+                class="media_link"
+                src="https://www.kindmeal.my/images/follow_twitter_grey.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="top_right_menu">
+          <div>
+            <p>Login</p>
+          </div>
+          <div>
+            <button id="fb">
+              <a
+                class="decorate1"
+                href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804791&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9050478%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITXmBzNrbc11rj86QonN3krZyQoqQTtSWV7LGV90onxFAKu6PVKcyfkaAuvWEALw_wcB"
+                >Facebook</a
+              >
+            </button>
+          </div>
+          <div>
+            <button id="mail">
+              <a class="decorate2" href="./signin.html">Email</a>
+            </button>
+          </div>
+          <div>
+            <p id="sign" onClick=togglePopUp()>Sign up</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nav2">
+        <a href="./index.html">Home</a>
+        <a href="./mealdeal.html">Meal Deals</a>
+        <a href="./kindmoments.html">KindMoments</a>
+        <a href="./hotpics.html">Hot Pics</a>
+        <a href="./reciepies.html">Reciepies</a>
+        <a href="./directory.html">Directory</a>
+        <a href="./articles.html">Articles</a>
+        <a href="./help.html">Help</a>
+      </div>
+      </div>
+ 
     <div style="background-color: rgb(248, 243, 243); height: 1880px">
+      <div class="container" id="popup-1">
+        <div class="child1">
+          <div class="head">
+            <img  style="margin-left: 15px;"src="https://www.kindmeal.my/images/logo-kindmeal.png" />
+            <img  onClick=togglePopUp()
+              style="height: 30px; position: relative"
+              src="file:///C:/Users/USER/Desktop/Masai/Images/cross.png"
+            />
+          </div>
+  
+          <h2>Join KindMeal For FREE Now</h2>
+          <p style="margin-top: 10px;">Please select the type of membership to proceed</p>
+        </div>
+        <div  onClick= navigate() class="child2" id="chld2">
+          <div>
+            <img 
+              style="height: 65%; margin-top: 20px; margin-left: 10px"
+              src="https://www.kindmeal.my/images/join_normal.png"
+            />
+          </div>
+          <div  style="margin-left: 10px">
+            <h3 style="margin-top:20px">Food Lover</h3>
+            <div>
+              <p style="margin-top:20px">
+                Join FREE to enjoy yummy deals, share<br />
+                reviews & meet our community of compassionate food lovers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="child2" style="margin-top: 20px">
+          <div>
+            <img
+              style="height: 65%; margin-top: 20px; margin-left: 10px"
+              src="https://www.kindmeal.my/images/join_shop.png"
+            />
+          </div>
+          <div style="margin-left: 10px">
+            <h3 style="margin-top:20px">Restaurant / Shop Owner</h3>
+            <div>
+              <p style="margin-top:20px">
+                List your food outlet, create exciting vegetarian deals & showcase
+                your delicious menu for FREE. Enjoy our yummy deals, share reviews
+                & meet food lovers too.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="member">
+          <div>
+            <p>Member Login</p>
+          </div>
+          <div>
+            <p>Forget Password</p>
+          </div>
+        </div>
+      </div>
       <div class="container1">
         <div id="banner">
           <div>
@@ -360,7 +480,7 @@
     
 </body>
 </html>
-<script src="./Scripts/navbar.js"></script>
+
 <script src="./Scripts/footer.js"></script>
 
 <script>
@@ -368,6 +488,17 @@
     let image=document.getElementById("b_item");
     return window.location.href="./mealdeal.html";
   }
+
+  function togglePopUp(){
+    document.getElementById("popup-1").classList.toggle("active");
+
+  }
+
+  function navigate(){
+   window.location.href="./signup.html"
+  }
+
+
 </script>
 
 
