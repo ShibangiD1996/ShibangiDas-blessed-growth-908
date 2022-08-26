@@ -44,7 +44,7 @@ let Navbar_HTML = `<div>
       </button>
     </div>
     <div>
-      <p><a class="decorate3" href="./popup.html">Sign up</a></p>
+      <p id="sign" onClick=togglePopUp()>Sign up</p>
     </div>
   </div>
 </div>

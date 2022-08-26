@@ -1,11 +1,16 @@
 
-body>div{ 
-    display: flex;
+.main_contain{ 
+   
+    height:900px;
+    width: 70%;
+  display: flex;
     justify-content: center;
     margin-left:50px;
     margin-right: 50px;
-    margin-top: 30px;
+   
     gap:30px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .side-box{
@@ -15,6 +20,7 @@ body>div{
     height: 250px;
     width:240px;
     margin-top: 20px;
+    
 }
 
 .side-box>img{
@@ -27,18 +33,74 @@ body>div{
     margin-left:32px;
 }
 
+#firstname,#lastname{
+    border-radius: 5px;
+    margin-left: 3px;
+    height: 40px;
+    width: 250px;
+    text-align: center;
+}
+
+#email{
+    border-radius: 5px;
+    height: 40px;
+    width: 480px;
+    text-align: center;
+    margin-left: 66px;
+}
+#re_email{
+    border-radius: 5px;
+    height: 40px;
+    width: 478px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+#password,#uname,#birthdate{
+    border-radius: 5px;
+    height: 40px;
+    width: 480px;
+    text-align: center;
+    margin-left: 45px;
+    
+}
+
+#country{
+    border-radius: 5px;
+    height: 40px;
+    width: 485px;
+    text-align: center;
+    margin-left: 57px;
+}
+
+#state{
+    border-radius: 5px;
+    height: 40px;
+    width: 485px;
+    text-align: center;
+    margin-left: 77px;
+
+}
 
 
+#male,#female{
+    margin-left: 60px;
+}
 
+#photo{
+    margin-left:25px ;
+    border-radius: 3px;
+   
 
-
-
-
-
-
-
-
-
-
-
+}
+#submit{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 10px;
+    height:50px;
+    width: 200px;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
 

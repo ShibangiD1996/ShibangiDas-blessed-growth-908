@@ -11,7 +11,7 @@
   </head>
   <body>
     <nav></nav>
-    <div>
+    <div class="main_contain">
       <div>
         <div class="side-box">
           <img src="https://www.kindmeal.my/images/join_normal.png" />
@@ -38,7 +38,7 @@
 
         <div class="side-box">
           <h2 style="text-align: center">Why KindMeal?</h2>
-          <ul>
+          <ul style="margin-left: 30px;margin-top:3px">
             <li>Exclusive meat-free deals</li>
             <li>Share yummy food moments</li>
             <li>Meet friendly food lovers</li>
@@ -47,7 +47,7 @@
             <li>Instant coupons & dining</li>
             <li>No upfront payment, booking or printing</li>
           </ul>
-          <p style="margin-top: -15px">
+          <p>
             <a href="https://www.kindmeal.my/about.htm"
               >More about KindMeal »</a
             >
@@ -56,14 +56,15 @@
       </div>
       <div class="form">
         <form>
-          <h1>
+          <h1 style="margin-top: 20px">
             Food Lover? Sign Up Now or
             <a
+              style="margin-top: 20px"
               href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804791&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9050478%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITUyBZNL2AqBB-NWJsTEWBmtcoLnApayvBoqqm5U1Hrr9z5ca4G8gZoaAt7NEALw_wcB"
               >Login With Facebook</a
             >
           </h1>
-          <p>
+          <p style="margin-top: 20px; padding-bottom: 20px">
             Discover tasty meat-free meals and dine instantly — no coupon
             payment, booking or printing is required. KindMeal is a fun,
             exciting and cool new way for you to show your compassion towards
@@ -73,18 +74,34 @@
             your money at the same time!
           </p>
           <label>Your Name</label>
-          <input type="text" id="firstname" />
-          <input type="text" id="lastname" /><br /><br />
+          <input type="text" id="firstname" placeholder="first name" />
+          <input
+            type="text"
+            id="lastname"
+            placeholder="last name"
+          /><br /><br />
           <label>Email</label>
-          <input type="email" id="email" /><br /><br />
+          <input type="email" id="email" placeholder="email" /><br /><br />
           <label>Re-Enter Email:</label>
-          <input type="email" id="re_email" /><br /><br />
+          <input
+            type="email"
+            id="re_email"
+            placeholder="Re-enter email"
+          /><br /><br />
           <label>Password</label>
-          <input type="password" id="password" /><br /><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="password"
+          /><br /><br />
           <label>Username</label>
-          <input type="text" id="uname" /><br /><br />
-          <label>Birt Date</label>
-          <input type="date" id="birtdate" /><br /><br />
+          <input
+            type="text"
+            id="uname"
+            placeholder="Choose a cool username for your Personal Profile Page,comments & review  "
+          /><br /><br />
+          <label>Birth Date</label>
+          <input type="date" id="birthdate" /><br /><br />
           <label>Country</label>
           <select id="country">
             <option value="">Malaysia</option>
@@ -129,6 +146,11 @@
         </form>
       </div>
     </div>
+    <div style="background-color: rgb(248, 243, 243); margin-top: 100px">
+      <div style="margin-left: 250px">
+        <img src="https://www.kindmeal.my/images/how_kindmeal_works.png" />
+      </div>
+    </div>
     <footer></footer>
   </body>
 </html>
@@ -146,7 +168,7 @@
       u_rmail: signup_form.re_email.value,
       u_pwd: signup_form.password.value,
       u_nm: signup_form.uname.value,
-      u_dob: signup_form.birtdate.value,
+      u_dob: signup_form.birthdate.value,
       u_country: signup_form.country.value,
       u_state: signup_form.state.value,
       u_male: signup_form.male.value,
