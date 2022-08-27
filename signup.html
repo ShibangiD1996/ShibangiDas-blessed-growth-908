@@ -38,7 +38,7 @@
 
         <div class="side-box">
           <h2 style="text-align: center">Why KindMeal?</h2>
-          <ul style="margin-left: 30px;margin-top:3px">
+          <ul style="margin-left: 30px; margin-top: 3px">
             <li>Exclusive meat-free deals</li>
             <li>Share yummy food moments</li>
             <li>Meet friendly food lovers</li>
@@ -159,9 +159,11 @@
 
   let signupLS = JSON.parse(localStorage.getItem("signup_data")) || [];
 
+  let obj;
+
   signup_form.addEventListener("submit", function (event) {
     event.preventDefault();
-    let obj = {
+    obj = {
       u_fnm: signup_form.firstname.value,
       u_lnm: signup_form.lastname.value,
       u_mail: signup_form.email.value,
@@ -208,14 +210,10 @@
       alert("Please enter a valid value for State");
       return;
     }
-    signupLS.forEach(function (ele) {
-      if (ele.email === obj.email) {
-        alert("User already exists");
-      }
-    });
 
     signupLS.push(obj);
     localStorage.setItem("signup_data", JSON.stringify(signupLS));
+    window.location.href = "signin.html";
   });
 </script>
 <script src="./Scripts/navbar.js"></script>

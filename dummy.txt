@@ -1,0 +1,7 @@
+
+image1_background="https://www.kindmeal.my/photos/shop/6/624-c.jpg";
+image1_logo="https://www.kindmeal.my/photos/shop/6/624-4812-m.jpg";
+
+
+
+
