@@ -1,5 +1,4 @@
 
-
 .container{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 25px;
@@ -10,11 +9,37 @@
     margin-top: 70px;
 }
 
+#email_u,#password_u{
+    border: 0.2px solid grey;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+}
 
 
+#submit{
+    border: 0.2px solid  rgb(100, 184, 100);
+    background-color: rgb(100, 184, 100);
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-style: bold;
+    color: white;
+}
 
 
+#facebook{
+    border: 0.2px solid blue;
+    background-color:blue;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-style: bold;
+  margin-top: 20px;
 
+}
 
 
 

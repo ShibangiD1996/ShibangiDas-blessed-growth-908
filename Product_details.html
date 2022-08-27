@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-Detail</title>
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/product.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+  </head>
+  <body>
+    <nav></nav>
+ 
+    <div id="Top_img">
+      <img src="https://www.kindmeal.my/photos/shop/6/624-c.jpg" />
+    </div>
+  
+   
+    <div id="Container_D"></div>
+  </body>
+</html>
+<script src="./Scripts/navbar.js"></script>
+<script src="./Scripts/footer.js"></script>
+<script>
+  let Product_details = [
+    {
+      discount: "-10%",
+      name: "YishensuGroceries",
+      image_url:
+        "file:///C:/Users/USER/Desktop/Masai/Images/pexels-bulbfish-1143754.jpg",
+      dish: "Yishensu Groceries @ Ipoh",
+      dish_url: "https://www.kindmeal.my/YishensuGroceries/deal-720.htm",
+      location: "Yishensu Groceries Ipoh— Ipoh, Perak",
+      location_url: "https://www.kindmeal.my/YishensuGroceries",
+      about:
+        "Yishensu Groceries, Ipoh offers you a wide range of healthy, nutritious and tasty vegetarian products! We develop our own exclus",
+      free_coupon: "Get FREE Coupon",
+      free_coupon_url: "https://www.kindmeal.my/YishensuGroceries/deal-720.htm",
+      ratings:
+        "file:///C:/Users/USER/Desktop/Masai/Images/5starblankrating.jpg",
+      mark: "(0)",
+      eggfree: "https://www.kindmeal.my/images/icon_egg.png",
+      dairyfree: "https://www.kindmeal.my/images/icon_milk_disabled.png",
+      beerfree: "https://www.kindmeal.my/images/icon_alcohol_disabled.png",
+      Kind_meal: "KindMeal Discount",
+      kindmeal_discount: "10% Off",
+      expires_in: "Expires In",
+      expires: "5 Days",
+    },
+  ];
+
+  let LSData = JSON.parse(localStorage.getItem("new_page")) || [];
+  console.log(LSData);
+
+  function Display(data) {
+   
+
+    let product = document.createElement("div");
+    product.className = "p_container";
+
+    let discnt = document.createElement("h3");
+    discnt.innerText = data.discount;
+    discnt.className = "discount";
+
+    let image = document.createElement("img");
+    image.src = data.image_url;
+    image.className = "dishImg";
+
+    let dish = document.createElement("h2");
+    dish.innerText = data.dish;
+    dish.className = "dishNm";
+
+    let location = document.createElement("h3");
+    location.innerText = data.location;
+    location.className = "loctn";
+
+    let about = document.createElement("p");
+    about.innerText = data.about;
+    about.className = "abt";
+
+    let btn = document.createElement("button");
+    btn.innerText = "Get Free Coupon";
+    btn.className = "button";
+    btn.addEventListener("click", function () {
+      GetCoupon();
+    });
+
+    let ratings = document.createElement("img");
+    ratings.src = data.ratings;
+    ratings.className = "rating";
+
+    let mark = document.createElement("p");
+    mark.innerHTML = data.mark;
+    mark.className = "mark";
+
+    let m_div = document.createElement("div");
+    m_div.className = "m_div";
+
+    let n_div = document.createElement("div");
+    n_div.className = "bottom_div";
+
+    let eggfree = document.createElement("img");
+    eggfree.src = data.eggfree;
+    eggfree.className = "egg";
+
+    let dairyfree = document.createElement("img");
+    dairyfree.src = data.dairyfree;
+    dairyfree.className = "dairy";
+
+    let beerfree = document.createElement("img");
+    beerfree.src = data.beerfree;
+    beerfree.className = "beer";
+
+    let n1_div = document.createElement("div");
+    n1_div.className = "n1Div";
+
+    let kindmeal = document.createElement("h4");
+    kindmeal.innerHTML = data.Kind_meal;
+    kindmeal.className = "kindMeal";
+
+    let kindmealdis = document.createElement("h2");
+    kindmealdis.innerHTML = data.kindmeal_discount;
+    kindmealdis.className = "kindMealDis";
+
+    let n2_div = document.createElement("div");
+    n2_div.className = "n2_div";
+
+    let expires_in = document.createElement("h4");
+    expires_in.innerText = data.expires_in;
+    expires_in.className = "expi";
+
+    let expires = document.createElement("h2");
+    expires.innerText = data.expires;
+    expires.className = "exp";
+
+    n_div.append(eggfree, dairyfree, beerfree);
+    n1_div.append(kindmeal, kindmealdis);
+    n2_div.append(expires_in, expires);
+
+    m_div.append(n_div, n1_div, n2_div);
+
+    product.append(
+      discnt,
+      image,
+      dish,
+      location,
+      about,
+      btn,
+      ratings,
+      mark,
+      m_div
+    );
+    document.body.append(product);
+  }
+
+  Display(LSData);
+
+  function GetCoupon() {
+    alert("Please View Your Coupon In Your  Email");
+  }
+</script>
+
+
+
+
+
+
+

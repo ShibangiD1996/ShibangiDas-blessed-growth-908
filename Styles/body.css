@@ -1,7 +1,7 @@
 .container1{
    
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    height:500px;
+    height:400px;
    width:72.4% ;
   
    margin: auto;  
@@ -12,14 +12,14 @@
 }
 
 #b_item{
-  height:450px;
+  height:400px;
   width:700px;
  
 }
 
 #company{
     width: 400px;
-    height:450px;
+    height:400px;
    
 }
 
@@ -41,20 +41,23 @@
 .des1,.des4,.des7{
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    height:260px;
-    width:72.4% ;
+    height:280px;
+    width:73% ;
     margin: auto;
-   margin-top: 170px;
+   margin-top: 200px;
+
   
     
 }
 .des1>h2{
     margin-left: 20px;
-    margin-top:30px;
+    font-size: 20px;
+    color: grey;
+    margin-top:50px;
 }
 .des3{
     display: flex;
-   margin-left: 30px;
+   margin-left: 45px;
 }
 .des3>div{
     display: flex;
@@ -69,31 +72,34 @@
     display:flex;
     margin-left: -84%;
    text-align: center;
-
+    padding: 10px;
+  
 }
 .des2>div{
     margin-top: -30px;
-   
+    text-decoration: none;
 }
 
 
-.des2>h3>a{
+.des2>h4>a{
     text-decoration: none;
 }
 
 .des4,.des7{
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    height:260px;
-    width:72.4% ;
+    height:250px;
+    width:74% ;
     margin: auto;
-   margin-top: 40px;
+    margin-top: 40px;
 }
 
 
 .des4>h2{
     margin-left: 20px;
     margin-top:30px;
+    font-size: 20px;
+    color: grey;
 }
 .des5,.des8{
     display: flex;
@@ -108,6 +114,7 @@
 .des5>div>div>img{
     height: 55%;
     width: 200px;
+    
 }
 .des6,.des9{
     display: flex;
@@ -118,7 +125,7 @@
     margin-top: -30px;
 }
 
-.des6,.des9>h3>a{
+.des6,.des9>h4>a{
     text-decoration: none;
 }
 
@@ -126,6 +133,8 @@
 .des7>h2{
     margin-left: 20px;
     margin-top:30px;
+    font-size: 20px;
+    color: grey;
 }
 
 .des8>div{
@@ -202,7 +211,6 @@
    width: 70%;
   margin: auto;
 }
-
 
 
 

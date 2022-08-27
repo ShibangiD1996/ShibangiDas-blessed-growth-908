@@ -13,17 +13,19 @@
       <h2>Member Login</h2>
       <h4 style="color:red">Please login first to get your coupon</h4>
       <form>
-        <input type="email" id="email" placeholder="Your Email"/><br/><br/>
-        <input type="password" id="password" placeholder="Your Password"/><br/><br/>
-        <input type="submit" id="submit" value="Login"/>
+        <input type="email" id="email_u" placeholder="Your Email"/><br/><br/>
+        <input type="password" id="password_u" placeholder="Your Password"/><br/><br/>
+        <input  type="submit" id="submit" value="Login"/>
        </form>
-       <hr/>
+       <hr style="width: 80%;"/>
       <button id="facebook">
-      <a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804791&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9050478%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITVo780PilI1tLfLOwUjH_vTrKsNaiMfWq00nWIok7RXWyCNCYz0JW0aAl_TEALw_wcB">
+      <a style="color:white;text-decoration:none;" href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804791&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9050478%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITVo780PilI1tLfLOwUjH_vTrKsNaiMfWq00nWIok7RXWyCNCYz0JW0aAl_TEALw_wcB">
       Login With Facebook</button>
-      <div style="display:flex; justify-content: space-around;margin-top: 40px;">
-        <a href="">Forgot password?</a>
-        <a href="signin.html">Not a member?Signup FREE!</a>
+      <div style="
+      display:flex;height: 40px; justify-content: space-around;margin-top: 40px;
+      gap:30px">
+        <a style="text-decoration: none;color: grey;" href="">Forgot password?</a>
+        <a href="signup.html"  style="text-decoration: none;color: grey">Not a member?Signup FREE!</a>
       </div>
     </div>
     
@@ -32,32 +34,34 @@
 <script>
     let form=document.querySelector("form");
 
-    let signupLS=JSON.parse(localStorage.getItem("signup-data")) || [];
+    let signupLS = JSON.parse(localStorage.getItem("signup_data")) || [];
+    console.log(signupLS);
     
-    form.addEventListener("submit",function(event){
+    form.addEventListener("submit", function(event){
         event.preventDefault();
-       if(signupLS.length===0){
+       if(signupLS.length === 0){
         alert("No user till now");
         return;
        }
-       let obj={
-        email:form.email.value,
-        password:form.password.value
+       let obj1={
+        email_u:form.email_u.value,
+        password_u:form.password_u.value
        }
-
-       let isSignedin=false;
+        let isSignedin=false;
        signupLS.forEach(function(ele){
-        if(ele.email===obj.u_mail && ele.password===obj.u_pwd){
-            isSignedin=true;
-            localStorage.setItem("signin",JSON.stringify(ele));
-            alert("Sign up Successfull");
+       
+          if(ele.u_rmail === obj1.email_u && ele.u_pwd === obj1.password_u){
+            flag=true;
+            localStorage.setItem("signin",JSON.stringify(obj1));
+            console.log("ok");
+            alert("Signup successfull");
             window.location.href="index.html";
-        }
-       })
-        if(isSignedin === false){
-            alert("User Does not Exist");
-        }
-
+          }
+        })
+          if(flag===true){
+            alert("User Does Not Exist");
+          }
+     
     })
 
 </script>

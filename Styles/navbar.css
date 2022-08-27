@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body{
@@ -39,7 +40,7 @@ body{
     align-items:center;
     justify-content:center;
     gap: 30px;
-  margin-left: 150px;
+    margin-left: 150px;
  
 }
 .decorate1{
@@ -54,6 +55,7 @@ body{
    border-radius: 10%;
     height:30px;
     width: 100px;
+    cursor:pointer;
 }
 .decorate2{
     text-decoration: none;
@@ -66,7 +68,7 @@ body{
     border-radius: 10%;
      height:30px;
      width: 100px;
-
+     cursor:pointer;
 }
 
 
@@ -80,7 +82,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
- 
+   
 }
 .nav2>a{
     text-decoration: none;
@@ -89,7 +91,9 @@ body{
 }
 
 
-
+#sign{
+    cursor:pointer;
+}
 
 
 
