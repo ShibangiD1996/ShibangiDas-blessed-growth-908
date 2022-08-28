@@ -51,14 +51,14 @@
        signupLS.forEach(function(ele){
        
           if(ele.u_rmail === obj1.email_u && ele.u_pwd === obj1.password_u){
-            flag=true;
+            isSignedin=true;
             localStorage.setItem("signin",JSON.stringify(obj1));
             console.log("ok");
             alert("Signup successfull");
             window.location.href="index.html";
           }
         })
-          if(flag===false){
+          if(isSignedin===false){
             alert("User Does Not Exist");
           }
      
